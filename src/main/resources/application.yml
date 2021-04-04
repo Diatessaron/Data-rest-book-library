@@ -1,11 +1,24 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+  health:
+    defaults:
+      enabled: true
 spring:
   data:
     mongodb:
       host: localhost
       port: 27017
       database: library
-
 mongock:
   runner-type: "InitializingBean"
   change-logs-scan-package:
     - ru.otus.restbooklibrary.mongock.changelog
+logging:
+  file:
+    name: logfile.log
