@@ -2,7 +2,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: "*"
+        include: health, logfile, metrics, prometheus
   endpoint:
     health:
       show-details: always
