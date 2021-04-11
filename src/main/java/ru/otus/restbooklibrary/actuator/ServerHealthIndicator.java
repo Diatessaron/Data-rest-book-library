@@ -1,14 +1,18 @@
 package ru.otus.restbooklibrary.actuator;
 
 import com.fasterxml.jackson.databind.JsonNode;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.actuate.health.Health;
 import org.springframework.boot.actuate.health.HealthIndicator;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
+@Component
 public class ServerHealthIndicator implements HealthIndicator {
-    private final String serverUrl = "http://localhost:8080";
+    @Qualifier("template")
     private final RestTemplate restTemplate;
+    private final static String serverUrl = "http://localhost:8080";
 
     public ServerHealthIndicator(RestTemplate restTemplate) {
         this.restTemplate = restTemplate;
