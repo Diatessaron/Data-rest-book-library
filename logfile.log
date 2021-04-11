@@ -1,0 +1,547 @@
+2021-04-06 19:10:51.542  INFO 10072 --- [main] ru.otus.restbooklibrary.Main             : Starting Main using Java 16 on DESKTOP-STATTP4 with PID 10072 (C:\Users\anduser\IdeaProjects\restbooklibrary\target\classes started by anduser in C:\Users\anduser\IdeaProjects\restbooklibrary)
+2021-04-06 19:10:51.556  INFO 10072 --- [main] ru.otus.restbooklibrary.Main             : No active profile set, falling back to default profiles: default
+2021-04-06 19:10:52.612  INFO 10072 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-06 19:10:52.676  INFO 10072 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 4 MongoDB repository interfaces.
+2021-04-06 19:10:53.164  INFO 10072 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-06 19:10:53.175  INFO 10072 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-06 19:10:53.176  INFO 10072 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-06 19:10:53.281  INFO 10072 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-06 19:10:53.281  INFO 10072 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1620 ms
+2021-04-06 19:10:53.946  INFO 10072 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-04-06 19:10:54.011  INFO 10072 --- [cluster-rtt-ClusterId{value='606c880d037c4b30d7c4d9c7', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:56}] to localhost:27017
+2021-04-06 19:10:54.011  INFO 10072 --- [cluster-ClusterId{value='606c880d037c4b30d7c4d9c7', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:55}] to localhost:27017
+2021-04-06 19:10:54.012  INFO 10072 --- [cluster-ClusterId{value='606c880d037c4b30d7c4d9c7', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=26051700}
+2021-04-06 19:10:54.605  INFO 10072 --- [main] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:57}] to localhost:27017
+2021-04-06 19:10:54.839  INFO 10072 --- [main] org.reflections.Reflections              : Reflections took 37 ms to scan 1 urls, producing 1 keys and 1 values 
+2021-04-06 19:10:54.857  INFO 10072 --- [main] org.reflections.Reflections              : Reflections took 3 ms to scan 1 urls, producing 1 keys and 1 values 
+2021-04-06 19:10:54.863  INFO 10072 --- [main] i.c.driver.core.lock.DefaultLockManager  : Changock trying to acquire the lock
+2021-04-06 19:10:54.885  INFO 10072 --- [main] i.c.driver.core.lock.DefaultLockManager  : Changock acquired the lock until: Tue Apr 06 19:13:54 MSK 2021
+2021-04-06 19:10:54.890  INFO 10072 --- [main] i.c.runner.core.MigrationExecutor        : Changock starting the data migration sequence id[2021-04-06T19:10:54.890098900-534]...
+2021-04-06 19:10:54.901  INFO 10072 --- [main] i.c.runner.core.MigrationExecutor        : method[dropDb] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.sync.v4.decorator.impl.MongoDataBaseDecoratorImpl]
+2021-04-06 19:10:55.028  INFO 10072 --- [main] i.c.runner.core.MigrationExecutor        : RE-APPLIED - ChangeEntry{, "id"="dropDb", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="dropDb"}
+2021-04-06 19:10:55.097  INFO 10072 --- [main] i.c.runner.core.MigrationExecutor        : method[insertAuthor] with arguments: [jdk.proxy2.$Proxy112]
+2021-04-06 19:10:55.130  INFO 10072 --- [main] i.c.runner.core.MigrationExecutor        : APPLIED - ChangeEntry{, "id"="insertAuthor", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="insertAuthor"}
+2021-04-06 19:10:55.134  INFO 10072 --- [main] i.c.runner.core.MigrationExecutor        : method[insertGenre] with arguments: [jdk.proxy2.$Proxy113]
+2021-04-06 19:10:55.176  INFO 10072 --- [main] i.c.runner.core.MigrationExecutor        : APPLIED - ChangeEntry{, "id"="insertGenre", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="insertGenre"}
+2021-04-06 19:10:55.182  INFO 10072 --- [main] i.c.runner.core.MigrationExecutor        : method[insertBook] with arguments: [jdk.proxy2.$Proxy114]
+2021-04-06 19:10:55.201  INFO 10072 --- [main] i.c.runner.core.MigrationExecutor        : APPLIED - ChangeEntry{, "id"="insertBook", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="insertBook"}
+2021-04-06 19:10:55.208  INFO 10072 --- [main] i.c.runner.core.MigrationExecutor        : method[insertComment] with arguments: [jdk.proxy2.$Proxy115]
+2021-04-06 19:10:55.248  INFO 10072 --- [main] i.c.runner.core.MigrationExecutor        : APPLIED - ChangeEntry{, "id"="insertComment", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="insertComment"}
+2021-04-06 19:10:55.250  INFO 10072 --- [main] i.c.driver.core.lock.DefaultLockManager  : Changock releasing the lock
+2021-04-06 19:10:55.253  INFO 10072 --- [main] i.c.driver.core.lock.DefaultLockManager  : Changock released the lock
+2021-04-06 19:10:55.253  INFO 10072 --- [main] i.c.runner.core.MigrationExecutor        : Changock has finished
+2021-04-06 19:10:55.662  INFO 10072 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2021-04-06 19:10:55.750  INFO 10072 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-06 19:10:55.766  INFO 10072 --- [main] ru.otus.restbooklibrary.Main             : Started Main in 4.961 seconds (JVM running for 6.079)
+2021-04-06 19:10:56.340  INFO 10072 --- [RMI TCP Connection(1)-172.25.224.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-06 19:10:56.340  INFO 10072 --- [RMI TCP Connection(1)-172.25.224.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-06 19:10:56.342  INFO 10072 --- [RMI TCP Connection(1)-172.25.224.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-04-06 19:25:12.183  INFO 3000 --- [main] ru.otus.restbooklibrary.Main             : Starting Main using Java 16 on DESKTOP-STATTP4 with PID 3000 (C:\Users\anduser\IdeaProjects\restbooklibrary\target\classes started by anduser in C:\Users\anduser\IdeaProjects\restbooklibrary)
+2021-04-06 19:25:12.188  INFO 3000 --- [main] ru.otus.restbooklibrary.Main             : No active profile set, falling back to default profiles: default
+2021-04-06 19:25:13.287  INFO 3000 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-06 19:25:13.341  INFO 3000 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 4 MongoDB repository interfaces.
+2021-04-06 19:25:13.812  INFO 3000 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-06 19:25:13.824  INFO 3000 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-06 19:25:13.825  INFO 3000 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-06 19:25:13.944  INFO 3000 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-06 19:25:13.945  INFO 3000 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1661 ms
+2021-04-06 19:25:14.662  INFO 3000 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-04-06 19:25:14.720  INFO 3000 --- [cluster-ClusterId{value='606c8b6acaaf577a6b99809b', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:58}] to localhost:27017
+2021-04-06 19:25:14.721  INFO 3000 --- [cluster-rtt-ClusterId{value='606c8b6acaaf577a6b99809b', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:59}] to localhost:27017
+2021-04-06 19:25:14.721  INFO 3000 --- [cluster-ClusterId{value='606c8b6acaaf577a6b99809b', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=21117400}
+2021-04-06 19:25:15.288  INFO 3000 --- [main] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:60}] to localhost:27017
+2021-04-06 19:25:15.572  INFO 3000 --- [main] org.reflections.Reflections              : Reflections took 52 ms to scan 1 urls, producing 1 keys and 1 values 
+2021-04-06 19:25:15.594  INFO 3000 --- [main] org.reflections.Reflections              : Reflections took 3 ms to scan 1 urls, producing 1 keys and 1 values 
+2021-04-06 19:25:15.605  INFO 3000 --- [main] i.c.driver.core.lock.DefaultLockManager  : Changock trying to acquire the lock
+2021-04-06 19:25:15.631  INFO 3000 --- [main] i.c.driver.core.lock.DefaultLockManager  : Changock acquired the lock until: Tue Apr 06 19:28:15 MSK 2021
+2021-04-06 19:25:15.639  INFO 3000 --- [main] i.c.runner.core.MigrationExecutor        : Changock starting the data migration sequence id[2021-04-06T19:25:15.638043900-13]...
+2021-04-06 19:25:15.652  INFO 3000 --- [main] i.c.runner.core.MigrationExecutor        : method[dropDb] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.sync.v4.decorator.impl.MongoDataBaseDecoratorImpl]
+2021-04-06 19:25:15.703  INFO 3000 --- [main] i.c.runner.core.MigrationExecutor        : RE-APPLIED - ChangeEntry{, "id"="dropDb", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="dropDb"}
+2021-04-06 19:25:15.775  INFO 3000 --- [main] i.c.runner.core.MigrationExecutor        : method[insertAuthor] with arguments: [jdk.proxy2.$Proxy112]
+2021-04-06 19:25:15.840  INFO 3000 --- [main] i.c.runner.core.MigrationExecutor        : APPLIED - ChangeEntry{, "id"="insertAuthor", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="insertAuthor"}
+2021-04-06 19:25:15.848  INFO 3000 --- [main] i.c.runner.core.MigrationExecutor        : method[insertGenre] with arguments: [jdk.proxy2.$Proxy113]
+2021-04-06 19:25:15.868  INFO 3000 --- [main] i.c.runner.core.MigrationExecutor        : APPLIED - ChangeEntry{, "id"="insertGenre", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="insertGenre"}
+2021-04-06 19:25:15.875  INFO 3000 --- [main] i.c.runner.core.MigrationExecutor        : method[insertBook] with arguments: [jdk.proxy2.$Proxy114]
+2021-04-06 19:25:15.911  INFO 3000 --- [main] i.c.runner.core.MigrationExecutor        : APPLIED - ChangeEntry{, "id"="insertBook", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="insertBook"}
+2021-04-06 19:25:15.923  INFO 3000 --- [main] i.c.runner.core.MigrationExecutor        : method[insertComment] with arguments: [jdk.proxy2.$Proxy115]
+2021-04-06 19:25:15.974  INFO 3000 --- [main] i.c.runner.core.MigrationExecutor        : APPLIED - ChangeEntry{, "id"="insertComment", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="insertComment"}
+2021-04-06 19:25:15.978  INFO 3000 --- [main] i.c.driver.core.lock.DefaultLockManager  : Changock releasing the lock
+2021-04-06 19:25:15.982  INFO 3000 --- [main] i.c.driver.core.lock.DefaultLockManager  : Changock released the lock
+2021-04-06 19:25:15.982  INFO 3000 --- [main] i.c.runner.core.MigrationExecutor        : Changock has finished
+2021-04-06 19:25:16.658  INFO 3000 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-04-06 19:25:16.802  INFO 3000 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-06 19:25:16.827  INFO 3000 --- [main] ru.otus.restbooklibrary.Main             : Started Main in 5.234 seconds (JVM running for 6.038)
+2021-04-06 19:25:17.481  INFO 3000 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-06 19:25:17.482  INFO 3000 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-06 19:25:17.484  INFO 3000 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-04-06 19:26:12.667  WARN 3000 --- [http-nio-8080-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /actuator/prometheus
+2021-04-06 19:41:08.670  INFO 5032 --- [main] ru.otus.restbooklibrary.Main             : Starting Main using Java 16 on DESKTOP-STATTP4 with PID 5032 (C:\Users\anduser\IdeaProjects\restbooklibrary\target\classes started by anduser in C:\Users\anduser\IdeaProjects\restbooklibrary)
+2021-04-06 19:41:08.675  INFO 5032 --- [main] ru.otus.restbooklibrary.Main             : No active profile set, falling back to default profiles: default
+2021-04-06 19:41:11.312  INFO 5032 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-06 19:41:11.562  INFO 5032 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 233 ms. Found 4 MongoDB repository interfaces.
+2021-04-06 19:41:13.206  INFO 5032 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-06 19:41:13.239  INFO 5032 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-06 19:41:13.241  INFO 5032 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-06 19:41:13.598  INFO 5032 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-06 19:41:13.599  INFO 5032 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4843 ms
+2021-04-06 19:41:14.649  WARN 5032 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'serverHealthIndicator' defined in file [C:\Users\anduser\IdeaProjects\restbooklibrary\target\classes\ru\otus\restbooklibrary\actuator\ServerHealthIndicator.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.web.client.RestTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2021-04-06 19:41:14.660  INFO 5032 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-04-06 19:41:14.729  INFO 5032 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-04-06 19:41:14.820 ERROR 5032 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in ru.otus.restbooklibrary.actuator.ServerHealthIndicator required a bean of type 'org.springframework.web.client.RestTemplate' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.web.client.RestTemplate' in your configuration.
+
+2021-04-06 19:57:04.954  INFO 12008 --- [main] ru.otus.restbooklibrary.Main             : Starting Main using Java 16 on DESKTOP-STATTP4 with PID 12008 (C:\Users\anduser\IdeaProjects\restbooklibrary\target\classes started by anduser in C:\Users\anduser\IdeaProjects\restbooklibrary)
+2021-04-06 19:57:04.968  INFO 12008 --- [main] ru.otus.restbooklibrary.Main             : No active profile set, falling back to default profiles: default
+2021-04-06 19:57:08.048  INFO 12008 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-06 19:57:08.266  INFO 12008 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 202 ms. Found 4 MongoDB repository interfaces.
+2021-04-06 19:57:09.921  INFO 12008 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-06 19:57:09.950  INFO 12008 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-06 19:57:09.952  INFO 12008 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-06 19:57:10.264  INFO 12008 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-06 19:57:10.265  INFO 12008 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5041 ms
+2021-04-06 19:57:11.006  INFO 12008 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-04-06 19:57:11.066  INFO 12008 --- [cluster-rtt-ClusterId{value='606c92e7f8c51226b4d9058a', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:61}] to localhost:27017
+2021-04-06 19:57:11.067  INFO 12008 --- [cluster-ClusterId{value='606c92e7f8c51226b4d9058a', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:62}] to localhost:27017
+2021-04-06 19:57:11.067  INFO 12008 --- [cluster-ClusterId{value='606c92e7f8c51226b4d9058a', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=22637700}
+2021-04-06 19:57:11.627  INFO 12008 --- [main] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:63}] to localhost:27017
+2021-04-06 19:57:11.886  INFO 12008 --- [main] org.reflections.Reflections              : Reflections took 35 ms to scan 1 urls, producing 1 keys and 1 values 
+2021-04-06 19:57:11.900  INFO 12008 --- [main] org.reflections.Reflections              : Reflections took 3 ms to scan 1 urls, producing 1 keys and 1 values 
+2021-04-06 19:57:11.906  INFO 12008 --- [main] i.c.driver.core.lock.DefaultLockManager  : Changock trying to acquire the lock
+2021-04-06 19:57:11.921  INFO 12008 --- [main] i.c.driver.core.lock.DefaultLockManager  : Changock acquired the lock until: Tue Apr 06 20:00:11 MSK 2021
+2021-04-06 19:57:11.927  INFO 12008 --- [main] i.c.runner.core.MigrationExecutor        : Changock starting the data migration sequence id[2021-04-06T19:57:11.927474600-101]...
+2021-04-06 19:57:11.937  INFO 12008 --- [main] i.c.runner.core.MigrationExecutor        : method[dropDb] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.sync.v4.decorator.impl.MongoDataBaseDecoratorImpl]
+2021-04-06 19:57:11.992  INFO 12008 --- [main] i.c.runner.core.MigrationExecutor        : RE-APPLIED - ChangeEntry{, "id"="dropDb", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="dropDb"}
+2021-04-06 19:57:12.083  INFO 12008 --- [main] i.c.runner.core.MigrationExecutor        : method[insertAuthor] with arguments: [jdk.proxy2.$Proxy112]
+2021-04-06 19:57:12.129  INFO 12008 --- [main] i.c.runner.core.MigrationExecutor        : APPLIED - ChangeEntry{, "id"="insertAuthor", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="insertAuthor"}
+2021-04-06 19:57:12.134  INFO 12008 --- [main] i.c.runner.core.MigrationExecutor        : method[insertGenre] with arguments: [jdk.proxy2.$Proxy113]
+2021-04-06 19:57:12.151  INFO 12008 --- [main] i.c.runner.core.MigrationExecutor        : APPLIED - ChangeEntry{, "id"="insertGenre", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="insertGenre"}
+2021-04-06 19:57:12.157  INFO 12008 --- [main] i.c.runner.core.MigrationExecutor        : method[insertBook] with arguments: [jdk.proxy2.$Proxy114]
+2021-04-06 19:57:12.209  INFO 12008 --- [main] i.c.runner.core.MigrationExecutor        : APPLIED - ChangeEntry{, "id"="insertBook", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="insertBook"}
+2021-04-06 19:57:12.218  INFO 12008 --- [main] i.c.runner.core.MigrationExecutor        : method[insertComment] with arguments: [jdk.proxy2.$Proxy115]
+2021-04-06 19:57:12.242  INFO 12008 --- [main] i.c.runner.core.MigrationExecutor        : APPLIED - ChangeEntry{, "id"="insertComment", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="insertComment"}
+2021-04-06 19:57:12.243  INFO 12008 --- [main] i.c.driver.core.lock.DefaultLockManager  : Changock releasing the lock
+2021-04-06 19:57:12.246  INFO 12008 --- [main] i.c.driver.core.lock.DefaultLockManager  : Changock released the lock
+2021-04-06 19:57:12.246  INFO 12008 --- [main] i.c.runner.core.MigrationExecutor        : Changock has finished
+2021-04-06 19:57:12.627  INFO 12008 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoint(s) beneath base path '/actuator'
+2021-04-06 19:57:12.713  INFO 12008 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-06 19:57:12.726  INFO 12008 --- [main] ru.otus.restbooklibrary.Main             : Started Main in 9.519 seconds (JVM running for 10.291)
+2021-04-06 19:57:12.954  INFO 12008 --- [RMI TCP Connection(3)-172.25.224.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-06 19:57:12.954  INFO 12008 --- [RMI TCP Connection(3)-172.25.224.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-06 19:57:12.956  INFO 12008 --- [RMI TCP Connection(3)-172.25.224.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-04-06 20:35:44.899  WARN 12008 --- [http-nio-8080-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /metrics
+2021-04-06 20:36:02.232  INFO 11120 --- [main] ru.otus.restbooklibrary.Main             : Starting Main using Java 16 on DESKTOP-STATTP4 with PID 11120 (C:\Users\anduser\IdeaProjects\restbooklibrary\target\classes started by anduser in C:\Users\anduser\IdeaProjects\restbooklibrary)
+2021-04-06 20:36:02.245  INFO 11120 --- [main] ru.otus.restbooklibrary.Main             : No active profile set, falling back to default profiles: default
+2021-04-06 20:36:04.138  INFO 11120 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-06 20:36:04.223  INFO 11120 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 75 ms. Found 4 MongoDB repository interfaces.
+2021-04-06 20:36:04.941  INFO 11120 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-06 20:36:04.958  INFO 11120 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-06 20:36:04.959  INFO 11120 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-06 20:36:05.141  INFO 11120 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-06 20:36:05.142  INFO 11120 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2770 ms
+2021-04-06 20:36:06.418  INFO 11120 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-04-06 20:36:06.498  INFO 11120 --- [cluster-ClusterId{value='606c9c06e90eba2115e83503', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:64}] to localhost:27017
+2021-04-06 20:36:06.498  INFO 11120 --- [cluster-rtt-ClusterId{value='606c9c06e90eba2115e83503', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:65}] to localhost:27017
+2021-04-06 20:36:06.498  INFO 11120 --- [cluster-ClusterId{value='606c9c06e90eba2115e83503', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=26960600}
+2021-04-06 20:36:07.461  INFO 11120 --- [main] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:66}] to localhost:27017
+2021-04-06 20:36:07.724  INFO 11120 --- [main] org.reflections.Reflections              : Reflections took 32 ms to scan 1 urls, producing 1 keys and 1 values 
+2021-04-06 20:36:07.749  INFO 11120 --- [main] org.reflections.Reflections              : Reflections took 3 ms to scan 1 urls, producing 1 keys and 1 values 
+2021-04-06 20:36:07.757  INFO 11120 --- [main] i.c.driver.core.lock.DefaultLockManager  : Changock trying to acquire the lock
+2021-04-06 20:36:07.774  INFO 11120 --- [main] i.c.driver.core.lock.DefaultLockManager  : Changock acquired the lock until: Tue Apr 06 20:39:07 MSK 2021
+2021-04-06 20:36:07.782  INFO 11120 --- [main] i.c.runner.core.MigrationExecutor        : Changock starting the data migration sequence id[2021-04-06T20:36:07.781371700-749]...
+2021-04-06 20:36:07.798  INFO 11120 --- [main] i.c.runner.core.MigrationExecutor        : method[dropDb] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.sync.v4.decorator.impl.MongoDataBaseDecoratorImpl]
+2021-04-06 20:36:07.850  INFO 11120 --- [main] i.c.runner.core.MigrationExecutor        : RE-APPLIED - ChangeEntry{, "id"="dropDb", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="dropDb"}
+2021-04-06 20:36:07.960  INFO 11120 --- [main] i.c.runner.core.MigrationExecutor        : method[insertAuthor] with arguments: [jdk.proxy2.$Proxy112]
+2021-04-06 20:36:08.007  INFO 11120 --- [main] i.c.runner.core.MigrationExecutor        : APPLIED - ChangeEntry{, "id"="insertAuthor", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="insertAuthor"}
+2021-04-06 20:36:08.021  INFO 11120 --- [main] i.c.runner.core.MigrationExecutor        : method[insertGenre] with arguments: [jdk.proxy2.$Proxy113]
+2021-04-06 20:36:08.075  INFO 11120 --- [main] i.c.runner.core.MigrationExecutor        : APPLIED - ChangeEntry{, "id"="insertGenre", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="insertGenre"}
+2021-04-06 20:36:08.091  INFO 11120 --- [main] i.c.runner.core.MigrationExecutor        : method[insertBook] with arguments: [jdk.proxy2.$Proxy114]
+2021-04-06 20:36:08.127  INFO 11120 --- [main] i.c.runner.core.MigrationExecutor        : APPLIED - ChangeEntry{, "id"="insertBook", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="insertBook"}
+2021-04-06 20:36:08.134  INFO 11120 --- [main] i.c.runner.core.MigrationExecutor        : method[insertComment] with arguments: [jdk.proxy2.$Proxy115]
+2021-04-06 20:36:08.178  INFO 11120 --- [main] i.c.runner.core.MigrationExecutor        : APPLIED - ChangeEntry{, "id"="insertComment", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="insertComment"}
+2021-04-06 20:36:08.181  INFO 11120 --- [main] i.c.driver.core.lock.DefaultLockManager  : Changock releasing the lock
+2021-04-06 20:36:08.191  INFO 11120 --- [main] i.c.driver.core.lock.DefaultLockManager  : Changock released the lock
+2021-04-06 20:36:08.194  INFO 11120 --- [main] i.c.runner.core.MigrationExecutor        : Changock has finished
+2021-04-06 20:36:08.979  INFO 11120 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoint(s) beneath base path '/actuator'
+2021-04-06 20:36:09.122  INFO 11120 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-06 20:36:09.139  INFO 11120 --- [main] ru.otus.restbooklibrary.Main             : Started Main in 7.971 seconds (JVM running for 10.369)
+2021-04-06 20:36:09.711  INFO 11120 --- [RMI TCP Connection(4)-172.25.224.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-06 20:36:09.712  INFO 11120 --- [RMI TCP Connection(4)-172.25.224.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-06 20:36:09.718  INFO 11120 --- [RMI TCP Connection(4)-172.25.224.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2021-04-06 20:37:24.490  WARN 11120 --- [http-nio-8080-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /actuator/httptrace
+2021-04-06 20:38:39.850  WARN 11120 --- [http-nio-8080-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /actuator/heapdump
+2021-04-06 20:38:52.427  INFO 1364 --- [main] ru.otus.restbooklibrary.Main             : Starting Main using Java 16 on DESKTOP-STATTP4 with PID 1364 (C:\Users\anduser\IdeaProjects\restbooklibrary\target\classes started by anduser in C:\Users\anduser\IdeaProjects\restbooklibrary)
+2021-04-06 20:38:52.430  INFO 1364 --- [main] ru.otus.restbooklibrary.Main             : No active profile set, falling back to default profiles: default
+2021-04-06 20:38:54.442  INFO 1364 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-06 20:38:54.550  INFO 1364 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 103 ms. Found 4 MongoDB repository interfaces.
+2021-04-06 20:38:55.586  INFO 1364 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-06 20:38:55.596  INFO 1364 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-06 20:38:55.597  INFO 1364 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-06 20:38:55.787  INFO 1364 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-06 20:38:55.788  INFO 1364 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3212 ms
+2021-04-06 20:38:57.131  INFO 1364 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-04-06 20:38:57.225  INFO 1364 --- [cluster-rtt-ClusterId{value='606c9cb1d18c7821dbf90489', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:68}] to localhost:27017
+2021-04-06 20:38:57.225  INFO 1364 --- [cluster-ClusterId{value='606c9cb1d18c7821dbf90489', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:67}] to localhost:27017
+2021-04-06 20:38:57.226  INFO 1364 --- [cluster-ClusterId{value='606c9cb1d18c7821dbf90489', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=31703100}
+2021-04-06 20:38:58.215  INFO 1364 --- [main] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:69}] to localhost:27017
+2021-04-06 20:38:58.503  INFO 1364 --- [main] org.reflections.Reflections              : Reflections took 42 ms to scan 1 urls, producing 1 keys and 1 values 
+2021-04-06 20:38:58.537  INFO 1364 --- [main] org.reflections.Reflections              : Reflections took 6 ms to scan 1 urls, producing 1 keys and 1 values 
+2021-04-06 20:38:58.553  INFO 1364 --- [main] i.c.driver.core.lock.DefaultLockManager  : Changock trying to acquire the lock
+2021-04-06 20:38:58.587  INFO 1364 --- [main] i.c.driver.core.lock.DefaultLockManager  : Changock acquired the lock until: Tue Apr 06 20:41:58 MSK 2021
+2021-04-06 20:38:58.593  INFO 1364 --- [main] i.c.runner.core.MigrationExecutor        : Changock starting the data migration sequence id[2021-04-06T20:38:58.592791200-755]...
+2021-04-06 20:38:58.604  INFO 1364 --- [main] i.c.runner.core.MigrationExecutor        : method[dropDb] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.sync.v4.decorator.impl.MongoDataBaseDecoratorImpl]
+2021-04-06 20:38:58.652  INFO 1364 --- [main] i.c.runner.core.MigrationExecutor        : RE-APPLIED - ChangeEntry{, "id"="dropDb", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="dropDb"}
+2021-04-06 20:38:58.740  INFO 1364 --- [main] i.c.runner.core.MigrationExecutor        : method[insertAuthor] with arguments: [jdk.proxy2.$Proxy112]
+2021-04-06 20:38:58.794  INFO 1364 --- [main] i.c.runner.core.MigrationExecutor        : APPLIED - ChangeEntry{, "id"="insertAuthor", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="insertAuthor"}
+2021-04-06 20:38:58.798  INFO 1364 --- [main] i.c.runner.core.MigrationExecutor        : method[insertGenre] with arguments: [jdk.proxy2.$Proxy113]
+2021-04-06 20:38:58.820  INFO 1364 --- [main] i.c.runner.core.MigrationExecutor        : APPLIED - ChangeEntry{, "id"="insertGenre", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="insertGenre"}
+2021-04-06 20:38:58.829  INFO 1364 --- [main] i.c.runner.core.MigrationExecutor        : method[insertBook] with arguments: [jdk.proxy2.$Proxy114]
+2021-04-06 20:38:58.871  INFO 1364 --- [main] i.c.runner.core.MigrationExecutor        : APPLIED - ChangeEntry{, "id"="insertBook", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="insertBook"}
+2021-04-06 20:38:58.880  INFO 1364 --- [main] i.c.runner.core.MigrationExecutor        : method[insertComment] with arguments: [jdk.proxy2.$Proxy115]
+2021-04-06 20:38:58.903  INFO 1364 --- [main] i.c.runner.core.MigrationExecutor        : APPLIED - ChangeEntry{, "id"="insertComment", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="insertComment"}
+2021-04-06 20:38:58.905  INFO 1364 --- [main] i.c.driver.core.lock.DefaultLockManager  : Changock releasing the lock
+2021-04-06 20:38:58.907  INFO 1364 --- [main] i.c.driver.core.lock.DefaultLockManager  : Changock released the lock
+2021-04-06 20:38:58.907  INFO 1364 --- [main] i.c.runner.core.MigrationExecutor        : Changock has finished
+2021-04-06 20:38:59.540  INFO 1364 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 5 endpoint(s) beneath base path '/actuator'
+2021-04-06 20:38:59.660  INFO 1364 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-06 20:38:59.678  INFO 1364 --- [main] ru.otus.restbooklibrary.Main             : Started Main in 8.238 seconds (JVM running for 9.75)
+2021-04-06 20:39:00.232  INFO 1364 --- [RMI TCP Connection(5)-172.25.224.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-06 20:39:00.233  INFO 1364 --- [RMI TCP Connection(5)-172.25.224.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-06 20:39:00.238  INFO 1364 --- [RMI TCP Connection(5)-172.25.224.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2021-04-06 20:39:34.427  WARN 1364 --- [http-nio-8080-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /actuator/httptrace
+2021-04-06 20:39:35.531  WARN 1364 --- [http-nio-8080-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /actuator/httptrace
+2021-04-06 20:39:36.244  WARN 1364 --- [http-nio-8080-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /actuator/httptrace
+2021-04-06 20:39:36.807  WARN 1364 --- [http-nio-8080-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /actuator/httptrace
+2021-04-06 20:39:44.410  WARN 1364 --- [http-nio-8080-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /actuator/httptrace
+2021-04-06 20:41:03.126  INFO 12568 --- [main] ru.otus.restbooklibrary.Main             : Starting Main using Java 16 on DESKTOP-STATTP4 with PID 12568 (C:\Users\anduser\IdeaProjects\restbooklibrary\target\classes started by anduser in C:\Users\anduser\IdeaProjects\restbooklibrary)
+2021-04-06 20:41:03.162  INFO 12568 --- [main] ru.otus.restbooklibrary.Main             : No active profile set, falling back to default profiles: default
+2021-04-06 20:41:05.198  INFO 12568 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-06 20:41:05.225  INFO 12568 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 0 MongoDB repository interfaces.
+2021-04-06 20:41:06.426  INFO 12568 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-06 20:41:06.445  INFO 12568 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-06 20:41:06.447  INFO 12568 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-06 20:41:06.570  INFO 12568 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-06 20:41:06.570  INFO 12568 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3184 ms
+2021-04-06 20:41:08.465  INFO 12568 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-04-06 20:41:08.541  INFO 12568 --- [cluster-ClusterId{value='606c9d347fbc3508417281c4', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:70}] to localhost:27017
+2021-04-06 20:41:08.541  INFO 12568 --- [cluster-rtt-ClusterId{value='606c9d347fbc3508417281c4', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:71}] to localhost:27017
+2021-04-06 20:41:08.541  INFO 12568 --- [cluster-ClusterId{value='606c9d347fbc3508417281c4', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=32788600}
+2021-04-06 20:41:08.659  INFO 12568 --- [main] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:72}] to localhost:27017
+2021-04-06 20:41:08.960  INFO 12568 --- [main] org.reflections.Reflections              : Reflections took 28 ms to scan 1 urls, producing 1 keys and 1 values 
+2021-04-06 20:41:08.978  INFO 12568 --- [main] org.reflections.Reflections              : Reflections took 5 ms to scan 1 urls, producing 1 keys and 1 values 
+2021-04-06 20:41:08.989  INFO 12568 --- [main] i.c.driver.core.lock.DefaultLockManager  : Changock trying to acquire the lock
+2021-04-06 20:41:09.019  INFO 12568 --- [main] i.c.driver.core.lock.DefaultLockManager  : Changock acquired the lock until: Tue Apr 06 20:44:08 MSK 2021
+2021-04-06 20:41:09.024  INFO 12568 --- [main] i.c.runner.core.MigrationExecutor        : Changock starting the data migration sequence id[2021-04-06T20:41:09.023633200-498]...
+2021-04-06 20:41:09.034  INFO 12568 --- [main] i.c.runner.core.MigrationExecutor        : method[dropDb] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.sync.v4.decorator.impl.MongoDataBaseDecoratorImpl]
+2021-04-06 20:41:09.084  INFO 12568 --- [main] i.c.runner.core.MigrationExecutor        : RE-APPLIED - ChangeEntry{, "id"="dropDb", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="dropDb"}
+2021-04-06 20:41:09.187  WARN 12568 --- [main] i.c.r.core.DependencyManagerWithContext  : Dependency not found: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'ru.otus.restbooklibrary.repository.AuthorRepository' available
+2021-04-06 20:41:09.187  INFO 12568 --- [main] i.c.runner.core.MigrationExecutor        : FAILED OVER - ChangeEntry{, "id"="insertAuthor", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="insertAuthor"}
+2021-04-06 20:41:09.191  INFO 12568 --- [main] i.c.driver.core.lock.DefaultLockManager  : Changock releasing the lock
+2021-04-06 20:41:09.200  INFO 12568 --- [main] i.c.driver.core.lock.DefaultLockManager  : Changock released the lock
+2021-04-06 20:41:09.201  INFO 12568 --- [main] i.c.runner.core.MigrationExecutor        : Changock has finished
+2021-04-06 20:41:09.220 ERROR 12568 --- [main] io.changock.runner.core.ChangockBase     : Error in changock process. ABORTED MIGRATION
+
+io.changock.migration.api.exception.ChangockException: Error in method[DatabaseChangelog.insertAuthor] : Wrong parameter[AuthorRepository]
+	at io.changock.runner.core.MigrationExecutor.processExceptionOnChangeSetExecution(MigrationExecutor.java:195) ~[changock-runner-core-1.1.6.jar:na]
+	at io.changock.runner.core.MigrationExecutor.processSingleChangeSet(MigrationExecutor.java:102) ~[changock-runner-core-1.1.6.jar:na]
+	at io.changock.runner.core.MigrationExecutor.lambda$processSingleChangeLog$2(MigrationExecutor.java:94) ~[changock-runner-core-1.1.6.jar:na]
+	at io.changock.runner.core.MigrationExecutor.executeInTransactionIfStrategyOrUsualIfNot(MigrationExecutor.java:80) ~[changock-runner-core-1.1.6.jar:na]
+	at io.changock.runner.core.MigrationExecutor.processSingleChangeLog(MigrationExecutor.java:94) ~[changock-runner-core-1.1.6.jar:na]
+	at io.changock.runner.core.MigrationExecutor.lambda$processAllChangeLogs$1(MigrationExecutor.java:88) ~[changock-runner-core-1.1.6.jar:na]
+	at io.changock.runner.core.MigrationExecutor.executeInTransactionIfStrategyOrUsualIfNot(MigrationExecutor.java:80) ~[changock-runner-core-1.1.6.jar:na]
+	at io.changock.runner.core.MigrationExecutor.processAllChangeLogs(MigrationExecutor.java:88) ~[changock-runner-core-1.1.6.jar:na]
+	at io.changock.runner.core.MigrationExecutor.lambda$executeMigration$0(MigrationExecutor.java:69) ~[changock-runner-core-1.1.6.jar:na]
+	at io.changock.runner.core.MigrationExecutor.executeInTransactionIfStrategyOrUsualIfNot(MigrationExecutor.java:80) ~[changock-runner-core-1.1.6.jar:na]
+	at io.changock.runner.core.MigrationExecutor.executeMigration(MigrationExecutor.java:69) ~[changock-runner-core-1.1.6.jar:na]
+	at io.changock.runner.spring.v5.core.SpringMigrationExecutor.executeMigration(SpringMigrationExecutor.java:38) ~[changock-spring-v5-runner-1.1.6.jar:na]
+	at io.changock.runner.core.ChangockBase.execute(ChangockBase.java:44) ~[changock-runner-core-1.1.6.jar:na]
+	at io.changock.runner.spring.v5.ChangockSpringBuilderBase$ChangockSpringInitializingBeanRunner.afterPropertiesSet(ChangockSpringBuilderBase.java:125) ~[changock-spring-v5-runner-1.1.6.jar:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:769) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1313) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302) ~[spring-boot-2.4.4.jar:2.4.4]
+	at ru.otus.restbooklibrary.Main.main(Main.java:13) ~[classes/:na]
+Caused by: io.changock.driver.api.common.DependencyInjectionException: Wrong parameter[AuthorRepository]
+	at io.changock.runner.core.MigrationExecutor.lambda$getParameter$4(MigrationExecutor.java:182) ~[changock-runner-core-1.1.6.jar:na]
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[na:na]
+	at io.changock.runner.core.MigrationExecutor.getParameter(MigrationExecutor.java:182) ~[changock-runner-core-1.1.6.jar:na]
+	at io.changock.runner.core.MigrationExecutor.executeChangeSetMethod(MigrationExecutor.java:171) ~[changock-runner-core-1.1.6.jar:na]
+	at io.changock.runner.core.MigrationExecutor.executeAndLogChangeSet(MigrationExecutor.java:127) ~[changock-runner-core-1.1.6.jar:na]
+	at io.changock.runner.spring.v5.core.SpringMigrationExecutor.executeAndLogChangeSet(SpringMigrationExecutor.java:44) ~[changock-spring-v5-runner-1.1.6.jar:na]
+	at io.changock.runner.core.MigrationExecutor.processSingleChangeSet(MigrationExecutor.java:100) ~[changock-runner-core-1.1.6.jar:na]
+	... 31 common frames omitted
+
+2021-04-06 20:41:09.222  WARN 12568 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongockInitializingBeanRunner' defined in com.github.cloudyrock.spring.v5.MongockContext: Invocation of init method failed; nested exception is io.changock.migration.api.exception.ChangockException: Error in method[DatabaseChangelog.insertAuthor] : Wrong parameter[AuthorRepository]
+2021-04-06 20:41:09.228  INFO 12568 --- [main] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:3, serverValue:72}] to localhost:27017 because the pool has been closed.
+2021-04-06 20:41:09.236  INFO 12568 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-04-06 20:41:09.262  INFO 12568 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-04-06 20:41:09.297 ERROR 12568 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongockInitializingBeanRunner' defined in com.github.cloudyrock.spring.v5.MongockContext: Invocation of init method failed; nested exception is io.changock.migration.api.exception.ChangockException: Error in method[DatabaseChangelog.insertAuthor] : Wrong parameter[AuthorRepository]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.5.jar:5.3.5]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:769) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1313) ~[spring-boot-2.4.4.jar:2.4.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302) ~[spring-boot-2.4.4.jar:2.4.4]
+	at ru.otus.restbooklibrary.Main.main(Main.java:13) ~[classes/:na]
+Caused by: io.changock.migration.api.exception.ChangockException: Error in method[DatabaseChangelog.insertAuthor] : Wrong parameter[AuthorRepository]
+	at io.changock.runner.core.MigrationExecutor.processExceptionOnChangeSetExecution(MigrationExecutor.java:195) ~[changock-runner-core-1.1.6.jar:na]
+	at io.changock.runner.core.MigrationExecutor.processSingleChangeSet(MigrationExecutor.java:102) ~[changock-runner-core-1.1.6.jar:na]
+	at io.changock.runner.core.MigrationExecutor.lambda$processSingleChangeLog$2(MigrationExecutor.java:94) ~[changock-runner-core-1.1.6.jar:na]
+	at io.changock.runner.core.MigrationExecutor.executeInTransactionIfStrategyOrUsualIfNot(MigrationExecutor.java:80) ~[changock-runner-core-1.1.6.jar:na]
+	at io.changock.runner.core.MigrationExecutor.processSingleChangeLog(MigrationExecutor.java:94) ~[changock-runner-core-1.1.6.jar:na]
+	at io.changock.runner.core.MigrationExecutor.lambda$processAllChangeLogs$1(MigrationExecutor.java:88) ~[changock-runner-core-1.1.6.jar:na]
+	at io.changock.runner.core.MigrationExecutor.executeInTransactionIfStrategyOrUsualIfNot(MigrationExecutor.java:80) ~[changock-runner-core-1.1.6.jar:na]
+	at io.changock.runner.core.MigrationExecutor.processAllChangeLogs(MigrationExecutor.java:88) ~[changock-runner-core-1.1.6.jar:na]
+	at io.changock.runner.core.MigrationExecutor.lambda$executeMigration$0(MigrationExecutor.java:69) ~[changock-runner-core-1.1.6.jar:na]
+	at io.changock.runner.core.MigrationExecutor.executeInTransactionIfStrategyOrUsualIfNot(MigrationExecutor.java:80) ~[changock-runner-core-1.1.6.jar:na]
+	at io.changock.runner.core.MigrationExecutor.executeMigration(MigrationExecutor.java:69) ~[changock-runner-core-1.1.6.jar:na]
+	at io.changock.runner.spring.v5.core.SpringMigrationExecutor.executeMigration(SpringMigrationExecutor.java:38) ~[changock-spring-v5-runner-1.1.6.jar:na]
+	at io.changock.runner.core.ChangockBase.execute(ChangockBase.java:44) ~[changock-runner-core-1.1.6.jar:na]
+	at io.changock.runner.spring.v5.ChangockSpringBuilderBase$ChangockSpringInitializingBeanRunner.afterPropertiesSet(ChangockSpringBuilderBase.java:125) ~[changock-spring-v5-runner-1.1.6.jar:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845) ~[spring-beans-5.3.5.jar:5.3.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782) ~[spring-beans-5.3.5.jar:5.3.5]
+	... 17 common frames omitted
+Caused by: io.changock.driver.api.common.DependencyInjectionException: Wrong parameter[AuthorRepository]
+	at io.changock.runner.core.MigrationExecutor.lambda$getParameter$4(MigrationExecutor.java:182) ~[changock-runner-core-1.1.6.jar:na]
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[na:na]
+	at io.changock.runner.core.MigrationExecutor.getParameter(MigrationExecutor.java:182) ~[changock-runner-core-1.1.6.jar:na]
+	at io.changock.runner.core.MigrationExecutor.executeChangeSetMethod(MigrationExecutor.java:171) ~[changock-runner-core-1.1.6.jar:na]
+	at io.changock.runner.core.MigrationExecutor.executeAndLogChangeSet(MigrationExecutor.java:127) ~[changock-runner-core-1.1.6.jar:na]
+	at io.changock.runner.spring.v5.core.SpringMigrationExecutor.executeAndLogChangeSet(SpringMigrationExecutor.java:44) ~[changock-spring-v5-runner-1.1.6.jar:na]
+	at io.changock.runner.core.MigrationExecutor.processSingleChangeSet(MigrationExecutor.java:100) ~[changock-runner-core-1.1.6.jar:na]
+	... 31 common frames omitted
+
+2021-04-06 20:41:55.787  INFO 4244 --- [main] ru.otus.restbooklibrary.Main             : Starting Main using Java 16 on DESKTOP-STATTP4 with PID 4244 (C:\Users\anduser\IdeaProjects\restbooklibrary\target\classes started by anduser in C:\Users\anduser\IdeaProjects\restbooklibrary)
+2021-04-06 20:41:55.797  INFO 4244 --- [main] ru.otus.restbooklibrary.Main             : No active profile set, falling back to default profiles: default
+2021-04-06 20:41:57.434  INFO 4244 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-06 20:41:57.525  INFO 4244 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85 ms. Found 4 MongoDB repository interfaces.
+2021-04-06 20:41:58.348  INFO 4244 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-06 20:41:58.363  INFO 4244 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-06 20:41:58.364  INFO 4244 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-06 20:41:58.550  INFO 4244 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-06 20:41:58.551  INFO 4244 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2608 ms
+2021-04-06 20:41:59.739  INFO 4244 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-04-06 20:41:59.824  INFO 4244 --- [cluster-rtt-ClusterId{value='606c9d67d56fc058e4f50565', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:74}] to localhost:27017
+2021-04-06 20:41:59.824  INFO 4244 --- [cluster-ClusterId{value='606c9d67d56fc058e4f50565', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:73}] to localhost:27017
+2021-04-06 20:41:59.826  INFO 4244 --- [cluster-ClusterId{value='606c9d67d56fc058e4f50565', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=34435500}
+2021-04-06 20:42:00.966  INFO 4244 --- [main] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:75}] to localhost:27017
+2021-04-06 20:42:01.253  INFO 4244 --- [main] org.reflections.Reflections              : Reflections took 25 ms to scan 1 urls, producing 1 keys and 1 values 
+2021-04-06 20:42:01.301  INFO 4244 --- [main] org.reflections.Reflections              : Reflections took 5 ms to scan 1 urls, producing 1 keys and 1 values 
+2021-04-06 20:42:01.318  INFO 4244 --- [main] i.c.driver.core.lock.DefaultLockManager  : Changock trying to acquire the lock
+2021-04-06 20:42:01.343  INFO 4244 --- [main] i.c.driver.core.lock.DefaultLockManager  : Changock acquired the lock until: Tue Apr 06 20:45:01 MSK 2021
+2021-04-06 20:42:01.357  INFO 4244 --- [main] i.c.runner.core.MigrationExecutor        : Changock starting the data migration sequence id[2021-04-06T20:42:01.356554900-435]...
+2021-04-06 20:42:01.412  INFO 4244 --- [main] i.c.runner.core.MigrationExecutor        : method[dropDb] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.sync.v4.decorator.impl.MongoDataBaseDecoratorImpl]
+2021-04-06 20:42:01.441  INFO 4244 --- [main] i.c.runner.core.MigrationExecutor        : RE-APPLIED - ChangeEntry{, "id"="dropDb", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="dropDb"}
+2021-04-06 20:42:01.577  INFO 4244 --- [main] i.c.runner.core.MigrationExecutor        : method[insertAuthor] with arguments: [jdk.proxy2.$Proxy112]
+2021-04-06 20:42:01.641  INFO 4244 --- [main] i.c.runner.core.MigrationExecutor        : APPLIED - ChangeEntry{, "id"="insertAuthor", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="insertAuthor"}
+2021-04-06 20:42:01.649  INFO 4244 --- [main] i.c.runner.core.MigrationExecutor        : method[insertGenre] with arguments: [jdk.proxy2.$Proxy113]
+2021-04-06 20:42:01.683  INFO 4244 --- [main] i.c.runner.core.MigrationExecutor        : APPLIED - ChangeEntry{, "id"="insertGenre", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="insertGenre"}
+2021-04-06 20:42:01.694  INFO 4244 --- [main] i.c.runner.core.MigrationExecutor        : method[insertBook] with arguments: [jdk.proxy2.$Proxy114]
+2021-04-06 20:42:01.742  INFO 4244 --- [main] i.c.runner.core.MigrationExecutor        : APPLIED - ChangeEntry{, "id"="insertBook", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="insertBook"}
+2021-04-06 20:42:01.753  INFO 4244 --- [main] i.c.runner.core.MigrationExecutor        : method[insertComment] with arguments: [jdk.proxy2.$Proxy115]
+2021-04-06 20:42:01.794  INFO 4244 --- [main] i.c.runner.core.MigrationExecutor        : APPLIED - ChangeEntry{, "id"="insertComment", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="insertComment"}
+2021-04-06 20:42:01.800  INFO 4244 --- [main] i.c.driver.core.lock.DefaultLockManager  : Changock releasing the lock
+2021-04-06 20:42:01.809  INFO 4244 --- [main] i.c.driver.core.lock.DefaultLockManager  : Changock released the lock
+2021-04-06 20:42:01.809  INFO 4244 --- [main] i.c.runner.core.MigrationExecutor        : Changock has finished
+2021-04-06 20:42:03.677  INFO 4244 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 5 endpoint(s) beneath base path '/actuator'
+2021-04-06 20:42:03.916  INFO 4244 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-06 20:42:03.937  INFO 4244 --- [main] ru.otus.restbooklibrary.Main             : Started Main in 9.088 seconds (JVM running for 11.154)
+2021-04-06 20:42:04.029  INFO 4244 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-06 20:42:04.032  INFO 4244 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-06 20:42:04.038  INFO 4244 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2021-04-06 22:16:35.419  INFO 4512 --- [main] ru.otus.restbooklibrary.Main             : Starting Main using Java 16 on DESKTOP-STATTP4 with PID 4512 (C:\Users\anduser\IdeaProjects\restbooklibrary\target\classes started by anduser in C:\Users\anduser\IdeaProjects\restbooklibrary)
+2021-04-06 22:16:35.423  INFO 4512 --- [main] ru.otus.restbooklibrary.Main             : No active profile set, falling back to default profiles: default
+2021-04-06 22:16:36.443  INFO 4512 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-06 22:16:36.498  INFO 4512 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 4 MongoDB repository interfaces.
+2021-04-06 22:16:36.962  INFO 4512 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-06 22:16:36.975  INFO 4512 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-06 22:16:36.975  INFO 4512 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-06 22:16:37.085  INFO 4512 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-06 22:16:37.086  INFO 4512 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1590 ms
+2021-04-06 22:16:37.758  INFO 4512 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-04-06 22:16:37.819  INFO 4512 --- [cluster-ClusterId{value='606cb39539a1772e8e272e54', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:77}] to localhost:27017
+2021-04-06 22:16:37.819  INFO 4512 --- [cluster-rtt-ClusterId{value='606cb39539a1772e8e272e54', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:76}] to localhost:27017
+2021-04-06 22:16:37.820  INFO 4512 --- [cluster-ClusterId{value='606cb39539a1772e8e272e54', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=23217800}
+2021-04-06 22:16:38.353  INFO 4512 --- [main] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:78}] to localhost:27017
+2021-04-06 22:16:38.576  INFO 4512 --- [main] org.reflections.Reflections              : Reflections took 32 ms to scan 1 urls, producing 1 keys and 1 values 
+2021-04-06 22:16:38.589  INFO 4512 --- [main] org.reflections.Reflections              : Reflections took 2 ms to scan 1 urls, producing 1 keys and 1 values 
+2021-04-06 22:16:38.596  INFO 4512 --- [main] i.c.driver.core.lock.DefaultLockManager  : Changock trying to acquire the lock
+2021-04-06 22:16:38.612  INFO 4512 --- [main] i.c.driver.core.lock.DefaultLockManager  : Changock acquired the lock until: Tue Apr 06 22:19:38 MSK 2021
+2021-04-06 22:16:38.617  INFO 4512 --- [main] i.c.runner.core.MigrationExecutor        : Changock starting the data migration sequence id[2021-04-06T22:16:38.617306900-690]...
+2021-04-06 22:16:38.626  INFO 4512 --- [main] i.c.runner.core.MigrationExecutor        : method[dropDb] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.sync.v4.decorator.impl.MongoDataBaseDecoratorImpl]
+2021-04-06 22:16:38.673  INFO 4512 --- [main] i.c.runner.core.MigrationExecutor        : RE-APPLIED - ChangeEntry{, "id"="dropDb", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="dropDb"}
+2021-04-06 22:16:38.735  INFO 4512 --- [main] i.c.runner.core.MigrationExecutor        : method[insertAuthor] with arguments: [jdk.proxy2.$Proxy112]
+2021-04-06 22:16:38.777  INFO 4512 --- [main] i.c.runner.core.MigrationExecutor        : APPLIED - ChangeEntry{, "id"="insertAuthor", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="insertAuthor"}
+2021-04-06 22:16:38.781  INFO 4512 --- [main] i.c.runner.core.MigrationExecutor        : method[insertGenre] with arguments: [jdk.proxy2.$Proxy113]
+2021-04-06 22:16:38.800  INFO 4512 --- [main] i.c.runner.core.MigrationExecutor        : APPLIED - ChangeEntry{, "id"="insertGenre", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="insertGenre"}
+2021-04-06 22:16:38.804  INFO 4512 --- [main] i.c.runner.core.MigrationExecutor        : method[insertBook] with arguments: [jdk.proxy2.$Proxy114]
+2021-04-06 22:16:38.840  INFO 4512 --- [main] i.c.runner.core.MigrationExecutor        : APPLIED - ChangeEntry{, "id"="insertBook", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="insertBook"}
+2021-04-06 22:16:38.844  INFO 4512 --- [main] i.c.runner.core.MigrationExecutor        : method[insertComment] with arguments: [jdk.proxy2.$Proxy115]
+2021-04-06 22:16:38.872  INFO 4512 --- [main] i.c.runner.core.MigrationExecutor        : APPLIED - ChangeEntry{, "id"="insertComment", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="insertComment"}
+2021-04-06 22:16:38.874  INFO 4512 --- [main] i.c.driver.core.lock.DefaultLockManager  : Changock releasing the lock
+2021-04-06 22:16:38.877  INFO 4512 --- [main] i.c.driver.core.lock.DefaultLockManager  : Changock released the lock
+2021-04-06 22:16:38.877  INFO 4512 --- [main] i.c.runner.core.MigrationExecutor        : Changock has finished
+2021-04-06 22:16:39.470  INFO 4512 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoint(s) beneath base path '/actuator'
+2021-04-06 22:16:39.555  INFO 4512 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-06 22:16:39.569  INFO 4512 --- [main] ru.otus.restbooklibrary.Main             : Started Main in 4.653 seconds (JVM running for 5.584)
+2021-04-06 22:16:39.784  INFO 4512 --- [RMI TCP Connection(1)-172.25.224.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-06 22:16:39.785  INFO 4512 --- [RMI TCP Connection(1)-172.25.224.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-06 22:16:39.787  INFO 4512 --- [RMI TCP Connection(1)-172.25.224.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-04-06 22:16:39.947  WARN 4512 --- [http-nio-8080-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /actuator/httptrace
+2021-04-06 22:16:56.325  INFO 8300 --- [main] ru.otus.restbooklibrary.Main             : Starting Main using Java 16 on DESKTOP-STATTP4 with PID 8300 (C:\Users\anduser\IdeaProjects\restbooklibrary\target\classes started by anduser in C:\Users\anduser\IdeaProjects\restbooklibrary)
+2021-04-06 22:16:56.329  INFO 8300 --- [main] ru.otus.restbooklibrary.Main             : No active profile set, falling back to default profiles: default
+2021-04-06 22:16:57.388  INFO 8300 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-06 22:16:57.456  INFO 8300 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63 ms. Found 4 MongoDB repository interfaces.
+2021-04-06 22:16:57.889  INFO 8300 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-06 22:16:57.898  INFO 8300 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-06 22:16:57.898  INFO 8300 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-06 22:16:58.004  INFO 8300 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-06 22:16:58.005  INFO 8300 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1575 ms
+2021-04-06 22:16:58.697  INFO 8300 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-04-06 22:16:58.763  INFO 8300 --- [cluster-rtt-ClusterId{value='606cb3aa894d8c43152ef8d4', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:80}] to localhost:27017
+2021-04-06 22:16:58.764  INFO 8300 --- [cluster-ClusterId{value='606cb3aa894d8c43152ef8d4', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:79}] to localhost:27017
+2021-04-06 22:16:58.764  INFO 8300 --- [cluster-ClusterId{value='606cb3aa894d8c43152ef8d4', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=26777600}
+2021-04-06 22:16:59.356  INFO 8300 --- [main] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:81}] to localhost:27017
+2021-04-06 22:16:59.579  INFO 8300 --- [main] org.reflections.Reflections              : Reflections took 30 ms to scan 1 urls, producing 1 keys and 1 values 
+2021-04-06 22:16:59.593  INFO 8300 --- [main] org.reflections.Reflections              : Reflections took 3 ms to scan 1 urls, producing 1 keys and 1 values 
+2021-04-06 22:16:59.602  INFO 8300 --- [main] i.c.driver.core.lock.DefaultLockManager  : Changock trying to acquire the lock
+2021-04-06 22:16:59.621  INFO 8300 --- [main] i.c.driver.core.lock.DefaultLockManager  : Changock acquired the lock until: Tue Apr 06 22:19:59 MSK 2021
+2021-04-06 22:16:59.626  INFO 8300 --- [main] i.c.runner.core.MigrationExecutor        : Changock starting the data migration sequence id[2021-04-06T22:16:59.626088500-706]...
+2021-04-06 22:16:59.637  INFO 8300 --- [main] i.c.runner.core.MigrationExecutor        : method[dropDb] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.sync.v4.decorator.impl.MongoDataBaseDecoratorImpl]
+2021-04-06 22:16:59.680  INFO 8300 --- [main] i.c.runner.core.MigrationExecutor        : RE-APPLIED - ChangeEntry{, "id"="dropDb", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="dropDb"}
+2021-04-06 22:16:59.745  INFO 8300 --- [main] i.c.runner.core.MigrationExecutor        : method[insertAuthor] with arguments: [jdk.proxy2.$Proxy112]
+2021-04-06 22:16:59.786  INFO 8300 --- [main] i.c.runner.core.MigrationExecutor        : APPLIED - ChangeEntry{, "id"="insertAuthor", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="insertAuthor"}
+2021-04-06 22:16:59.791  INFO 8300 --- [main] i.c.runner.core.MigrationExecutor        : method[insertGenre] with arguments: [jdk.proxy2.$Proxy113]
+2021-04-06 22:16:59.808  INFO 8300 --- [main] i.c.runner.core.MigrationExecutor        : APPLIED - ChangeEntry{, "id"="insertGenre", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="insertGenre"}
+2021-04-06 22:16:59.812  INFO 8300 --- [main] i.c.runner.core.MigrationExecutor        : method[insertBook] with arguments: [jdk.proxy2.$Proxy114]
+2021-04-06 22:16:59.855  INFO 8300 --- [main] i.c.runner.core.MigrationExecutor        : APPLIED - ChangeEntry{, "id"="insertBook", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="insertBook"}
+2021-04-06 22:16:59.860  INFO 8300 --- [main] i.c.runner.core.MigrationExecutor        : method[insertComment] with arguments: [jdk.proxy2.$Proxy115]
+2021-04-06 22:16:59.878  INFO 8300 --- [main] i.c.runner.core.MigrationExecutor        : APPLIED - ChangeEntry{, "id"="insertComment", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="insertComment"}
+2021-04-06 22:16:59.880  INFO 8300 --- [main] i.c.driver.core.lock.DefaultLockManager  : Changock releasing the lock
+2021-04-06 22:16:59.883  INFO 8300 --- [main] i.c.driver.core.lock.DefaultLockManager  : Changock released the lock
+2021-04-06 22:16:59.884  INFO 8300 --- [main] i.c.runner.core.MigrationExecutor        : Changock has finished
+2021-04-06 22:17:00.300  INFO 8300 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoint(s) beneath base path '/actuator'
+2021-04-06 22:17:00.389  INFO 8300 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-06 22:17:00.403  INFO 8300 --- [main] ru.otus.restbooklibrary.Main             : Started Main in 4.634 seconds (JVM running for 5.51)
+2021-04-06 22:17:00.579  INFO 8300 --- [RMI TCP Connection(3)-172.25.224.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-06 22:17:00.580  INFO 8300 --- [RMI TCP Connection(3)-172.25.224.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-06 22:17:00.584  INFO 8300 --- [RMI TCP Connection(3)-172.25.224.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2021-04-06 22:17:22.515  WARN 8300 --- [http-nio-8080-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /actuator/server
+2021-04-06 22:18:14.858  INFO 5876 --- [main] ru.otus.restbooklibrary.Main             : Starting Main using Java 16 on DESKTOP-STATTP4 with PID 5876 (C:\Users\anduser\IdeaProjects\restbooklibrary\target\classes started by anduser in C:\Users\anduser\IdeaProjects\restbooklibrary)
+2021-04-06 22:18:14.865  INFO 5876 --- [main] ru.otus.restbooklibrary.Main             : No active profile set, falling back to default profiles: default
+2021-04-06 22:18:15.893  INFO 5876 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-06 22:18:15.946  INFO 5876 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 4 MongoDB repository interfaces.
+2021-04-06 22:18:16.423  INFO 5876 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-06 22:18:16.431  INFO 5876 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-06 22:18:16.432  INFO 5876 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-06 22:18:16.528  INFO 5876 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-06 22:18:16.528  INFO 5876 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1566 ms
+2021-04-06 22:18:17.138  INFO 5876 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-04-06 22:18:17.200  INFO 5876 --- [cluster-ClusterId{value='606cb3f98338df1179447469', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:83}] to localhost:27017
+2021-04-06 22:18:17.201  INFO 5876 --- [cluster-rtt-ClusterId{value='606cb3f98338df1179447469', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:82}] to localhost:27017
+2021-04-06 22:18:17.201  INFO 5876 --- [cluster-ClusterId{value='606cb3f98338df1179447469', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=24590500}
+2021-04-06 22:18:17.813  INFO 5876 --- [main] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:84}] to localhost:27017
+2021-04-06 22:18:18.020  INFO 5876 --- [main] org.reflections.Reflections              : Reflections took 30 ms to scan 1 urls, producing 1 keys and 1 values 
+2021-04-06 22:18:18.034  INFO 5876 --- [main] org.reflections.Reflections              : Reflections took 3 ms to scan 1 urls, producing 1 keys and 1 values 
+2021-04-06 22:18:18.040  INFO 5876 --- [main] i.c.driver.core.lock.DefaultLockManager  : Changock trying to acquire the lock
+2021-04-06 22:18:18.063  INFO 5876 --- [main] i.c.driver.core.lock.DefaultLockManager  : Changock acquired the lock until: Tue Apr 06 22:21:18 MSK 2021
+2021-04-06 22:18:18.068  INFO 5876 --- [main] i.c.runner.core.MigrationExecutor        : Changock starting the data migration sequence id[2021-04-06T22:18:18.067813400-604]...
+2021-04-06 22:18:18.078  INFO 5876 --- [main] i.c.runner.core.MigrationExecutor        : method[dropDb] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.sync.v4.decorator.impl.MongoDataBaseDecoratorImpl]
+2021-04-06 22:18:18.126  INFO 5876 --- [main] i.c.runner.core.MigrationExecutor        : RE-APPLIED - ChangeEntry{, "id"="dropDb", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="dropDb"}
+2021-04-06 22:18:18.200  INFO 5876 --- [main] i.c.runner.core.MigrationExecutor        : method[insertAuthor] with arguments: [jdk.proxy2.$Proxy112]
+2021-04-06 22:18:18.229  INFO 5876 --- [main] i.c.runner.core.MigrationExecutor        : APPLIED - ChangeEntry{, "id"="insertAuthor", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="insertAuthor"}
+2021-04-06 22:18:18.233  INFO 5876 --- [main] i.c.runner.core.MigrationExecutor        : method[insertGenre] with arguments: [jdk.proxy2.$Proxy113]
+2021-04-06 22:18:18.263  INFO 5876 --- [main] i.c.runner.core.MigrationExecutor        : APPLIED - ChangeEntry{, "id"="insertGenre", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="insertGenre"}
+2021-04-06 22:18:18.267  INFO 5876 --- [main] i.c.runner.core.MigrationExecutor        : method[insertBook] with arguments: [jdk.proxy2.$Proxy114]
+2021-04-06 22:18:18.298  INFO 5876 --- [main] i.c.runner.core.MigrationExecutor        : APPLIED - ChangeEntry{, "id"="insertBook", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="insertBook"}
+2021-04-06 22:18:18.303  INFO 5876 --- [main] i.c.runner.core.MigrationExecutor        : method[insertComment] with arguments: [jdk.proxy2.$Proxy115]
+2021-04-06 22:18:18.321  INFO 5876 --- [main] i.c.runner.core.MigrationExecutor        : APPLIED - ChangeEntry{, "id"="insertComment", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="insertComment"}
+2021-04-06 22:18:18.322  INFO 5876 --- [main] i.c.driver.core.lock.DefaultLockManager  : Changock releasing the lock
+2021-04-06 22:18:18.325  INFO 5876 --- [main] i.c.driver.core.lock.DefaultLockManager  : Changock released the lock
+2021-04-06 22:18:18.325  INFO 5876 --- [main] i.c.runner.core.MigrationExecutor        : Changock has finished
+2021-04-06 22:18:18.790  INFO 5876 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoint(s) beneath base path '/actuator'
+2021-04-06 22:18:18.894  INFO 5876 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-06 22:18:18.908  INFO 5876 --- [main] ru.otus.restbooklibrary.Main             : Started Main in 4.6 seconds (JVM running for 5.481)
+2021-04-06 22:18:19.146  INFO 5876 --- [RMI TCP Connection(2)-172.25.224.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-06 22:18:19.147  INFO 5876 --- [RMI TCP Connection(2)-172.25.224.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-06 22:18:19.149  INFO 5876 --- [RMI TCP Connection(2)-172.25.224.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-06 22:35:18.920  INFO 15164 --- [main] ru.otus.restbooklibrary.Main             : Starting Main using Java 16 on DESKTOP-STATTP4 with PID 15164 (C:\Users\anduser\IdeaProjects\restbooklibrary\target\classes started by anduser in C:\Users\anduser\IdeaProjects\restbooklibrary)
+2021-04-06 22:35:18.925  INFO 15164 --- [main] ru.otus.restbooklibrary.Main             : No active profile set, falling back to default profiles: default
+2021-04-06 22:35:19.843  INFO 15164 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-06 22:35:19.896  INFO 15164 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 4 MongoDB repository interfaces.
+2021-04-06 22:35:20.328  INFO 15164 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-06 22:35:20.338  INFO 15164 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-06 22:35:20.338  INFO 15164 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-06 22:35:20.437  INFO 15164 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-06 22:35:20.438  INFO 15164 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1413 ms
+2021-04-06 22:35:21.036  INFO 15164 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-04-06 22:35:21.097  INFO 15164 --- [cluster-ClusterId{value='606cb7f95cd9303536822fe7', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:85}] to localhost:27017
+2021-04-06 22:35:21.098  INFO 15164 --- [cluster-ClusterId{value='606cb7f95cd9303536822fe7', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=27816600}
+2021-04-06 22:35:21.098  INFO 15164 --- [cluster-rtt-ClusterId{value='606cb7f95cd9303536822fe7', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:86}] to localhost:27017
+2021-04-06 22:35:21.625  INFO 15164 --- [main] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:87}] to localhost:27017
+2021-04-06 22:35:21.837  INFO 15164 --- [main] org.reflections.Reflections              : Reflections took 33 ms to scan 1 urls, producing 1 keys and 1 values 
+2021-04-06 22:35:21.851  INFO 15164 --- [main] org.reflections.Reflections              : Reflections took 3 ms to scan 1 urls, producing 1 keys and 1 values 
+2021-04-06 22:35:21.858  INFO 15164 --- [main] i.c.driver.core.lock.DefaultLockManager  : Changock trying to acquire the lock
+2021-04-06 22:35:21.875  INFO 15164 --- [main] i.c.driver.core.lock.DefaultLockManager  : Changock acquired the lock until: Tue Apr 06 22:38:21 MSK 2021
+2021-04-06 22:35:21.880  INFO 15164 --- [main] i.c.runner.core.MigrationExecutor        : Changock starting the data migration sequence id[2021-04-06T22:35:21.880175800-404]...
+2021-04-06 22:35:21.890  INFO 15164 --- [main] i.c.runner.core.MigrationExecutor        : method[dropDb] with arguments: [com.github.cloudyrock.mongock.driver.mongodb.sync.v4.decorator.impl.MongoDataBaseDecoratorImpl]
+2021-04-06 22:35:21.927  INFO 15164 --- [main] i.c.runner.core.MigrationExecutor        : RE-APPLIED - ChangeEntry{, "id"="dropDb", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="dropDb"}
+2021-04-06 22:35:21.992  INFO 15164 --- [main] i.c.runner.core.MigrationExecutor        : method[insertAuthor] with arguments: [jdk.proxy2.$Proxy112]
+2021-04-06 22:35:22.040  INFO 15164 --- [main] i.c.runner.core.MigrationExecutor        : APPLIED - ChangeEntry{, "id"="insertAuthor", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="insertAuthor"}
+2021-04-06 22:35:22.047  INFO 15164 --- [main] i.c.runner.core.MigrationExecutor        : method[insertGenre] with arguments: [jdk.proxy2.$Proxy113]
+2021-04-06 22:35:22.067  INFO 15164 --- [main] i.c.runner.core.MigrationExecutor        : APPLIED - ChangeEntry{, "id"="insertGenre", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="insertGenre"}
+2021-04-06 22:35:22.071  INFO 15164 --- [main] i.c.runner.core.MigrationExecutor        : method[insertBook] with arguments: [jdk.proxy2.$Proxy114]
+2021-04-06 22:35:22.115  INFO 15164 --- [main] i.c.runner.core.MigrationExecutor        : APPLIED - ChangeEntry{, "id"="insertBook", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="insertBook"}
+2021-04-06 22:35:22.120  INFO 15164 --- [main] i.c.runner.core.MigrationExecutor        : method[insertComment] with arguments: [jdk.proxy2.$Proxy115]
+2021-04-06 22:35:22.138  INFO 15164 --- [main] i.c.runner.core.MigrationExecutor        : APPLIED - ChangeEntry{, "id"="insertComment", "author"="Diatessaron", "class"="DatabaseChangelog", "method"="insertComment"}
+2021-04-06 22:35:22.139  INFO 15164 --- [main] i.c.driver.core.lock.DefaultLockManager  : Changock releasing the lock
+2021-04-06 22:35:22.142  INFO 15164 --- [main] i.c.driver.core.lock.DefaultLockManager  : Changock released the lock
+2021-04-06 22:35:22.142  INFO 15164 --- [main] i.c.runner.core.MigrationExecutor        : Changock has finished
+2021-04-06 22:35:22.526  INFO 15164 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoint(s) beneath base path '/actuator'
+2021-04-06 22:35:22.602  INFO 15164 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-06 22:35:22.616  INFO 15164 --- [main] ru.otus.restbooklibrary.Main             : Started Main in 4.189 seconds (JVM running for 5.11)
+2021-04-06 22:35:22.683  INFO 15164 --- [RMI TCP Connection(1)-172.25.224.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-06 22:35:22.683  INFO 15164 --- [RMI TCP Connection(1)-172.25.224.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-06 22:35:22.685  INFO 15164 --- [RMI TCP Connection(1)-172.25.224.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms

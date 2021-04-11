@@ -3,6 +3,7 @@ target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+logfile.log.2021-04-04.0.gz
 
 ### STS ###
 .apt_generated
